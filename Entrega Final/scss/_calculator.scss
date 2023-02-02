@@ -1,0 +1,66 @@
+.calculator{
+    background-image: url("../src/img/background.svg");
+    background-size: cover;
+    height: 100vh;
+.calculator__intro{
+    width: 100%;
+    position: relative;
+    h1{
+        font-size: 2.5em;
+        color: $strong-orange;
+        padding: 10vh 40vw .5vh 10vw;
+    }
+    h2{
+        font-size: $large-text;
+        color: $orange;
+        padding: 2vh 43vw .5vh 11vw;
+      a{
+        color: $orange;
+      }
+    }
+}
+
+
+
+
+.form {
+    border-radius: 15px;
+    width: 40vw;
+    margin: 15vh 30vw;
+    padding: 25px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 111;
+  }
+
+.formulario__input, .formulario__label, .formulario__submit {
+  display: block;
+  width: 100%;
+  font-size: $large-text;
+}
+.formulario__input {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.3);
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.formulario__label{
+  margin-bottom: -10px;
+}
+.formulario__submit {
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+.fijar {
+  margin-top: -140px;
+}
+.errorDiv{
+  color: red;
+  }
+
+}

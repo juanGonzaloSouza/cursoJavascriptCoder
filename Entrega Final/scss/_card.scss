@@ -1,0 +1,33 @@
+.cards {
+
+    margin-bottom: 200px;
+    .card {
+        width: 90%;
+        margin: 3em auto;
+
+        div {
+            background-color: $light-gray;
+            color: $strong-text;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 18px;
+
+            button {
+                border: none;
+            }
+
+            p {
+                width: 20%;
+                font-size: 1.3em;
+            }
+
+            i {
+                align-self: center;
+                cursor: pointer;
+                border: none;
+            }
+        }
+    }
+}

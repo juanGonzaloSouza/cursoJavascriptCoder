@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./src/icon/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <title>ShipHouse | Tu empresa de confianza.</title>
+</head>
+
+<body>
+
+    <header>
+        <section class="nav">
+            <article class="nav__logo">
+                <img src="./src/icon/logo-text-without-bg.png" alt="Imagen ilustrativa de la empresa">
+            </article>
+            <article class="nav__menu">
+                <i class="fas fa-bars" id="menu__btn"></i>
+                <div id="menu__back"></div>
+                <nav id="nav">
+                    <img src="./src/icon/logo-text-without-bg.png" alt="Imagen ilustrativa de la empresa">
+                    <ul>
+                        <li><a href="./index.html" id="selected">Calculadora</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+
+    </header>
+
+    <main class="calculator">
+        <section class="calculator__intro">
+            <h1>Simula un pedido aquí.</h1>
+            <h2>Al completar el pedido podrás pagar el mismo.</h2>
+        </section>
+        <section>
+            <article class="form">
+                    <label class="formulario__label"for="tipo">Tipo de envío</label>
+                    <select class="formulario__input" name="tipo" id="type">
+                        <option value="1">Sin franquicia</option>
+                        <option value="2">Con franquicia</option>
+                        <option value="3">Libros/Cd/Otros</option>
+                    </select>
+
+                    <label class="formulario__label"for="moneda">Moneda de pago</label>
+                    <select class="formulario__input" name="moneda" id="moneda">
+                                <option value="USD" selected>USD</option>
+                                <option value="ARS">ARS</option>
+                                <option value="BOB">BOB</option>
+                                <option value="CAD">CAD</option>
+                                <option value="CLP">CLP</option>>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP</option>
+                                <option value="MXN">MXN</option>
+                    </select>
+                
+                    <label class="formulario__label"for="name">Nombre del articulo</label>
+
+                    <input id="name" name="name" type="text" class="formulario__input">
+                    <div id="errorName" class="errorDiv"></div>
+                    <label class="formulario__label"for="weight">Peso en kg</label>
+
+                    <input id="weight" name="weight" type="text" class="formulario__input">
+                    <div id="weightError" class="errorDiv"></div>
+                    <button type="button" class="formulario__submit" id="btnFormulario">Enviar</button>
+                    <button type="button" class="hidden" id="delPedido">Borrar Pedidos</button>
+                    
+                    <div id="formError" class="errorDiv"></div>
+
+            </article>
+        </section>
+        <section>
+            <article id="cards" class="cards">
+            </article>
+            <article id="myModal" class="modal">
+        
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2 id="modalHeader"></h2>
+                </div>
+        
+                <div class="modal-footer">
+                  <button id="sendBtn">Enviar Pedido</button>
+                </div>
+              </div>
+        
+            </article>
+          </section>
+    </main>
+    <script src="./javascript/manipularPedido.js"></script>
+    <script src="./javascript/manipularDatos.js"></script>
+</body>
+
+</html>
